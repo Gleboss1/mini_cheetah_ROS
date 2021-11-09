@@ -82,7 +82,7 @@ class WalkingSimulation(object):
     #инициализируем раисим
     def __init_simulator(self):
         raisim.World.setLicenseFile(os.path.dirname(os.path.abspath(__file__)) + "/rsc/activation.raisim") #license
-        self.cheetah_urdf_file = "/home/gleboss/catkin_ws/src/quadruped_ctrl/scripts/rsc/cheetah_urdf_quadroped_ctrl/mini_cheetah.urdf" #path to urdf (((make to general)))
+        self.cheetah_urdf_file = os.path.dirname(os.path.abspath(__file__)) + "/../urdf/mini_cheetah.urdf" #path to urdf (((make to general)))
 
         #world and server init
         self.world = raisim.World()
