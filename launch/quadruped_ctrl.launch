@@ -7,6 +7,4 @@
 
     <node name="quadruped_simulator" pkg="quadruped_ctrl" type="walking_simulation.py"
           respawn="false" output="screen" required="true"/>
-
-    <include file="$(find quadruped_ctrl)/launch/vision.launch"/>
 </launch>
